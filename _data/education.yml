@@ -1,0 +1,16 @@
+- university: Kent State University
+  place: Kent, OH
+  degree:
+    - Master of Library and Information Science
+  date: 2012
+- university: Miami University
+  place: Miami, OH
+  degree:
+    - Postgraduate coursework in Teacher Education
+  date: 2009 - 2010
+- university: Appalachian State University
+  place: Boone, NC
+  degree:
+    - Bachelor of Arts in Theatre
+    - Bachelor of Arts in English
+  date: 2007

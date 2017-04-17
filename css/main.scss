@@ -1,0 +1,245 @@
+---
+---
+@import "variables";
+@import "normalize";
+@import "base";
+@import "print";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Ubuntu:400,700');
+
+/*.content {
+  //width: 848px;
+  //height: 1097px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+}
+.sidebar {
+  width: 33%;
+  float: left;
+}
+.main {
+  width: 67%;
+  display: inline-block;
+  float: left;
+}*/
+
+
+* {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+h1, blockquote {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+h2 .svg-icon {
+  margin-right: .4em;
+}
+
+h3 {
+  color: $highlight;
+  font-size: 1em;
+  margin: 1em 0 .5em 0;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar {
+  background-color: $primary;
+  padding-top: 2em;
+}
+
+.main {
+  padding-top: 2em;
+}
+
+
+.clip-circle {
+  height: 106px;
+  width: 106px;
+  border-radius: 50%;
+  background: $tertiary;
+  border: 6px solid $tertiary;
+}
+
+h1.nameplate {
+  margin: .18em .1em;
+}
+h1.nameplate span {
+  font-family: inherit;
+  display: block;
+  line-height: .84em
+}
+
+h1.nameplate .lastname {
+  padding-left: .45em;
+  font-weight: 700;
+}
+
+.subtitle {
+  color: $highlight;
+  font-size: .9em;
+}
+
+.justified-list {
+  width: 100%;
+}
+
+.justified-list dt, .justified-list dd {
+  display: inline-block;
+  margin-top: 1em;
+}
+.sidebar {
+  .justified-list dt {
+    width: 13%;
+    vertical-align: top;
+  }
+  .justified-list dd {
+    width: calc(87% - 45px);
+  }
+}
+
+.main {
+  .justified-list dt {
+    width: 20%;
+    vertical-align: top;
+  }
+  .justified-list dd {
+    width: calc(80% - 45px);
+  }
+}
+
+#contactInfo, #technicalSkills, #professionalInterests {
+  width: 80%;
+  font-size: .8em;
+}
+
+#education, #experience, #presentations, #committees {
+  font-size: .8em;
+  width: 90%;
+}
+
+.committee {
+  text-align: center;
+}
+.committee span {
+  display: block;
+}
+
+.committee span:nth-child(1) {
+  font-size: 1.1em;
+}
+.committee span:nth-child(2) {
+  color: $highlight;
+}
+.committee span:nth-child(3) {
+  font-style: italic;
+}
+
+#committeeList {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+#contactInfo {
+  margin: 0 3em;
+}
+#contactInfo dd {
+  margin-left: 10px;
+  width: calc(87% - 15px);
+}
+
+.svg-icon {
+  display: inline-block;
+  width: 14px;
+  padding-bottom: 3px;
+}
+
+.svg-icon-md {
+  width: 18px;
+}
+
+.svg-icon-lg {
+  width: 22px;
+}
+
+.svg-icon-xl {
+  width: 24px;
+}
+
+.svg-icon-xxl {
+  width: 36px;
+}
+
+.svg-icon svg {
+  fill: $highlight;
+}
+
+.skill-bar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.list-unstyled {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-inline {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-inline li {
+  padding-left: 1em;
+}
+
+.education-div ul, .experience-div h3 {
+  margin-bottom: 0;
+}
+.education-div ul li {
+  color: $highlight
+}
+
+.experience-div {
+  margin: 1em 0;
+}
+
+span.date {
+  color: $tertiary;
+  float: right;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 800px) {
+  .content {
+    width: 800px;
+    height: 1108px;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    display: flex;
+  }
+  .sidebar {
+    width: 33%;
+  }
+  .main {
+    width: 67%;
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+
+}

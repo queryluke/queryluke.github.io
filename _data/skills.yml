@@ -20,7 +20,7 @@
   level: 5
   type: middleware
 - name: Ruby
-  level: 2
+  level: 3
   type: middleware
 - name: Python
   level: 1

@@ -27,46 +27,36 @@
                 <span class="subtitle">Librarian&nbsp;&nbsp;+&nbsp;&nbsp;Full stack developer</span>
             </div>
             <div class="row">
-                <div id="contactInfo">
-                    <dl class="justified-list">
-                        <dt aria-label="Email address">{% include svg-icon.html icon="email" size="sm" %}</dt>
-                        <dd>lukeaeschleman@gmail.com</dd>
-                        <dt aria-label="Phone number">{% include svg-icon.html icon="phone" size="sm" %}</dt>
-                        <dd>828.773.7095</dd>
-                    </dl>
-                </div>
+                <p><small>lukeaeschleman@gmail.com</small></p>
             </div>
             <hr>
             <div class="row">
                 <div id="technicalSkills">
                     <h2>{% include svg-icon.html icon="code" size="xl" %}Technical Skills</h2>
+                    <h3>Languages</h3>
                     <dl class="justified-list skills">
-                        {% for skill in site.data.skills %}
+                        {% assign languages = site.data.skills | where: "type","language"%}
+                        {% for skill in languages %}
                         <dt>{{ skill.name }}</dt>
-                        <dd>{% include skill-level.html level=skill.level %}</dd>
+                        <dd>{% include skill-level.html level=skill.level half=skill.half %}</dd>
                         {% endfor %}
                     </dl>
-                </div>
-            </div>
-            <div class="row">
-                <div id="professionalInterests">
-                    <h2>{% include svg-icon.html icon="light-bulb" size="xl" %}Interests</h2>
-                    <h3>Professional</h3>
-                    <ul class="list-unstyled list-inline">
-                        <li>Data Visualization</li>
-                        <li>Chat bots</li>
-                        <li>Human Computer Interaction</li>
-                        <li>Information search behavior</li>
-                    </ul>
-                    <h3>Personal</h3>
-                    <ul class="list-unstyled list-inline">
-                        <li>Baseball</li>
-                        <li>Cooking</li>
-                        <li>Canines</li>
-                        <li>Kung-fu</li>
-                        <li>Legos</li>
-                        <li>Sci-fi</li>
-                    </ul>
+                    <h3 style="margin-top: 2em">Frameworks</h3>
+                    <dl class="justified-list skills">
+                        {% assign frameworks = site.data.skills | where: "type","framework" %}
+                        {% for skill in frameworks %}
+                        <dt>{{ skill.name }}</dt>
+                        <dd>{% include skill-level.html level=skill.level half=skill.half %}</dd>
+                        {% endfor %}
+                    </dl>
+                    <h3 style="margin-top: 2em">Other</h3>
+                    <dl class="justified-list skills">
+                        {% assign add = site.data.skills | where: "type","add" %}
+                        {% for skill in add %}
+                        <dt>{{ skill.name }}</dt>
+                        <dd>{% include skill-level.html level=skill.level half=skill.half %}</dd>
+                        {% endfor %}
+                    </dl>
                 </div>
             </div>
         </section>
@@ -90,7 +80,7 @@
                 </div>
             </div>
             <div class="row">
-                <div id="experience" style="margin-top: 1em;">
+                <div id="experience" style="margin-top: 2em;">
                     <h2>{% include svg-icon.html icon="experience" size="xl" %}Experience</h2>
                     {% for ex in site.data.experience %}
                         <div class="experience-div">
@@ -105,7 +95,7 @@
                     {% endfor %}
                 </div>
             </div>
-            <div class="row">
+            <!--<div class="row">
                 <div id="presentations">
                     <h2>{% include svg-icon.html icon="presentation" size="xl" %}Posters & Presentations</h2>
                     {% for pres in site.data.presentations %}
@@ -114,8 +104,8 @@
                         </p>
                     {% endfor %}
                 </div>
-            </div>
-            <div class="row">
+            </div>-->
+            <!--<div class="row">
                 <div id="committees">
                     <h2>{% include svg-icon.html icon="handshake" size="xl" %}Committees</h2>
                     <div id="committeeList">
@@ -127,6 +117,27 @@
                             </div>
                         {% endfor %}
                     </div>
+                </div>
+            </div>-->
+            <div class="row">
+                <div id="presentations">
+                    <h2>{% include svg-icon.html icon="light-bulb" size="xl" %}Interests</h2>
+                    <h3>Professional</h3>
+                    <ul class="list-unstyled list-inline">
+                        <li>Data visualization</li>
+                        <li>Human computer interaction</li>
+                        <li>Bibliometrics</li>
+                        <li>Information search behavior</li>
+                    </ul>
+                    <h3>Personal</h3>
+                    <ul class="list-unstyled list-inline">
+                        <li>Baseball</li>
+                        <li>TRPGs</li>
+                        <li>Canines</li>
+                        <li>Kung-fu</li>
+                        <li>LEGOs</li>
+                        <li>Sci-fi</li>
+                    </ul>
                 </div>
             </div>
         </section>

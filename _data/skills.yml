@@ -1,36 +1,42 @@
-- name: HTML5
-  level: 5
-  type: frontend
 - name: Javascript
   level: 5
-  type: frontend
-- name: CSS3
-  level: 4
-  type: frontend
-- name: UX
-  level: 3
-  type: frontend
-- name: Wordpress
-  level: 3
-  type: cms
-- name: Drupal
-  level: 3
-  type: cms
+  type: language
 - name: PHP
   level: 5
-  type: middleware
-- name: Ruby
-  level: 3
-  type: middleware
-- name: Python
-  level: 1
-  type: middleware
+  type: language
 - name: SQL
   level: 4
-  type: database
-- name: Solr
+  type: language
+- name: Ruby
   level: 3
-  type: indexing
+  type: language
+- name: Python
+  level: 1
+  type: language
+
+- name: Laravel
+  level: 5
+  type: framework
+- name: Vue.js
+  level: 4
+  type: framework
+- name: Rails
+  level: 3
+  type: framework
+- name: AngularJS
+  level: 3
+  type: framework
+
+- name: UX
+  level: 4
+  type: add
 - name: DevOps
   level: 3
-  type: devops
+  type: add
+- name: Solr
+  level: 3
+  type: add
+- name: Design
+  level: 2
+  type: add
+

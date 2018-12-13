@@ -1,0 +1,19 @@
+- name: Mass Effect 5e
+  url: https://n7.world
+  stack: Vue.js
+- name: William Blake Archive
+  url: http://www.blakearchive.org/
+  stack: Python / PostgreSQL / AngularJS
+- name: Wilson Library presents Clue!
+  url: https://clue.unc.edu
+  stack: Laravel / MySQL / Vanilla JS
+- name: Code4Lib 2018
+  url: https://2018.code4lib.org
+  stack: Jekyll / Github Pages
+- name: Citation Index
+  url: https://ci.lib.ncsu.edu
+  stack: Ruby on Rails / MySQL / JQuery
+- name: AHEC Digital Library
+  url: https://library.ncahec.org
+  stack: php / MySQL / JQuery
+

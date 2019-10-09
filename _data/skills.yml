@@ -14,29 +14,29 @@
   level: 1
   type: language
 
-- name: Laravel
+- name: Vue.js
   level: 5
   type: framework
-- name: Vue.js
+- name: Laravel
   level: 4
   type: framework
 - name: Rails
   level: 3
   type: framework
 - name: AngularJS
-  level: 3
+  level: 2
   type: framework
 
 - name: UX
   level: 4
+  type: add
+- name: Design
+  level: 3
   type: add
 - name: DevOps
   level: 3
   type: add
 - name: Solr
   level: 3
-  type: add
-- name: Design
-  level: 2
   type: add
 
